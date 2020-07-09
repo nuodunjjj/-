@@ -1,0 +1,262 @@
+/* 这个文件里放的是首页的样式 */
+/* main模块 */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+    margin-left: 219px;
+}
+.focus {
+    position: relative;
+    width: 720px;
+    height: 455px;
+}
+/* 使用font字体 */
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?7kkyc2');
+	src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7kkyc2') format('truetype'), url('../fonts/icomoon.woff?7kkyc2') format('woff'), url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.arrow_l,
+.arrow_r {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+}
+.arrow_r {
+    right: 0;
+}
+.circle {
+    position: absolute;
+    left: 50px;
+    bottom: 16px;
+}
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.circle .current {
+    background-color: #fff;
+}
+.newflash {
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 163px;
+    border: 1px solid #ccc;
+}
+.news_hd {
+    height: 32px;
+    border-bottom: 1px dotted #ccc;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 32px;
+}
+.news_hd a {
+    float: right;
+    font-size: 12px;
+    font-family: 'icomoon';
+}
+.news_bd {
+    padding: 10px 0 0 15px;
+}
+.news_bd li {
+    height: 23px;
+}
+.lifeservice {
+    /* 为了将li超出部分隐藏 */
+    overflow: hidden;
+    height: 208px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.lifeservice ul {
+    /* 比正常大小大2px，为了能让一排有四个li */
+    width: 252px;
+}
+.hot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../img/jian.jpg);
+}
+.lifeservice li {
+    position: relative;
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.lifeservice li a {
+    display: block;
+    /* 解决i引起的外边距塌陷合并的问题 */
+    overflow: hidden;
+    height: 100%;
+}
+.lifeservice li p {
+    text-align: center;
+}
+.service_ico {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+}
+.service_ico_huafei {
+    background: url(../img/icons.png) no-repeat -17px -16px;
+}
+.service_ico_feiji {
+    width: 26px;
+    background: url(../img/icons.png) no-repeat -78px -16px;
+}
+.bargain {
+    height: 75px;
+    margin-top: 5px;
+}
+
+/* recommond模块 */
+.recommond {
+    height: 163px;
+    margin-top: 10px;
+}
+.recom_hd {
+    width: 200px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+}
+.recom_hd img {
+    margin: 25px 0 10px 0;
+}
+.recom_hd h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+.recom_bd {
+    width: 1000px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+.recom_bd li {
+    float: left;
+    width: 249px;
+    height: 145px;
+    margin-top: 10px;
+    border-right: 1px solid #ccc;
+}
+.recom_bd .last {
+    border-right: 0;
+}
+
+/* 楼层区 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 20px;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #cc353e;
+}
+.tab_list {
+    float: right;
+}
+.tab_list li {
+    float: left;
+}
+.tab_list li a {
+    margin: 0 15px;
+}
+.box_bd {
+    height: 360px;
+}
+.tab_con li {
+    float: left;
+    height: 360px;
+}
+.w209 {
+    width: 209px;
+    background-color: #f9f9f9;
+}
+.w329 {
+    width: 329px;
+}
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+.w220 {
+    width: 220px;
+    border-right: 1px solid #ccc;
+}
+.tab_con_item {
+    border-bottom: 1px solid #ccc;
+}
+.tab_con_list 
+{
+    /* tab_con_list没有高度，孩子浮动了，要清除浮动，margin-bottom才起作用 */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.tab_con_list li {
+    width: 86px;
+    height: 32px;
+    margin-left: 10px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.box_bd li {
+    overflow: hidden;
+}
+.box_bd img {
+    /* 过渡写在本身上 */
+    transition: all .2s;
+}
+.box_bd img:hover {
+    margin-left: 8px;
+}
+
+/* 电梯导航 */
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    /* 版心的一半600px+自身宽度60px+10px间隔 */
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+}
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.fixedtool .first {
+    color: #fff;
+    background-color: #c81623;
+}
