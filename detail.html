@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/detail.css">
     <!-- 引入facion.ico网页图标 -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入js文件 -->
+    <script src="js/detail.js"></script>
 </head>
 
 <body>
@@ -140,6 +142,10 @@
             <div class="preview_wrap fl">
                 <div class="preview_img">
                     <img src="upload/s3.png" alt="">
+                    <div class="mask"></div>
+                    <div class="big">
+                        <img src="upload/big.jpg" alt="" class="bigImg">
+                    </div>
                 </div>
                 <!-- 预览列表 -->
                 <div class="preview_list">
@@ -182,30 +188,27 @@
                         <dd>
                             <i class="price">￥5299.00</i>
                             <a href="#">降价通知 </a>
-                             <div class="remark">累计评价6121888</div>
+                            <div class="remark">累计评价6121888</div>
                         </dd>
                     </dl>
                     <dl class="summary_promotion">
                         <dt>促销</dt>
                         <dd>
-                            <em>加购价</em>
-                            满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换
-                            购热销商品  详情 》
+                            <em>加购价</em> 满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换 购热销商品 详情 》
                         </dd>
                     </dl>
                     <dl class="summary_support">
                         <dt>支持</dt>
-                        <dd>以旧换新，闲置手机回收  4G套餐超值抢  礼品购</dd>
+                        <dd>以旧换新，闲置手机回收 4G套餐超值抢 礼品购</dd>
                     </dl>
                     <dl class="summary_stock">
                         <dt>配送至</dt>
-                        <dd>北京海淀区中关     有货    支持  99元免运费 |货到付款 |211限时达
-                            由自营发货，并提供售后服务。11:00前完成下单，预计今天（08月10日）送达   
+                        <dd>北京海淀区中关 有货 支持 99元免运费 |货到付款 |211限时达 由自营发货，并提供售后服务。11:00前完成下单，预计今天（08月10日）送达
                         </dd>
                     </dl>
                     <dl class="summary_support">
                         <dt>支持</dt>
-                        <dd>以旧换新，闲置手机回收  4G套餐超值抢  礼品购</dd>
+                        <dd>以旧换新，闲置手机回收 4G套餐超值抢 礼品购</dd>
                     </dl>
                     <dl class="choose_color">
                         <dt>选择颜色</dt>
@@ -256,7 +259,8 @@
                             <h5>罗姿 vivoS6手机壳 vivoz6/Z5x轻薄全包透明</h5>
                             <div class="aside_price">￥ 2000</div>
                             <a href="#" class="aside_addcar">加入购物车</a>
-                        </li><li>
+                        </li>
+                        <li>
                             <img src="upload/aside_img.jpg" alt="">
                             <h5>罗姿 vivoS6手机壳 vivoz6/Z5x轻薄全包透明</h5>
                             <div class="aside_price">￥ 2000</div>
@@ -276,12 +280,12 @@
                     </ul>
                 </div>
                 <div class="detail_tab_con">
-                    <ul class="item_info">
+                    <ul class="item_info" style="display: block;">
                         <li>分辨率：1920*1080(FHD)</li>
                         <li>后置摄像头：1200万像素</li>
                         <li>前置摄像头：500万像素</li>
-                        <li>核      数：其他</li>
-                        <li>频      率：以官网信息为准</li>
+                        <li>核 数：其他</li>
+                        <li>频 率：以官网信息为准</li>
                         <li>品牌： Apple ♥关注</li>
                         <li>商品名称：APPLEiPhone 6s Plus</li>
                         <li>商品编号：1861098</li>
@@ -291,6 +295,18 @@
                         <li>系统：苹果（IOS）</li>
                         <li>像素：1000-1600万</li>
                         <li>机身内存：64GB</li>
+                    </ul>
+                    <ul class="item_info">
+                        <li>规格与包装</li>
+                    </ul>
+                    <ul class="item_info">
+                        <li>售后保障</li>
+                    </ul>
+                    <ul class="item_info">
+                        <li>商品评价</li>
+                    </ul>
+                    <ul class="item_info">
+                        <li>手机社区</li>
                     </ul>
                     <p><a href="#" class="more">更多参数</a></p>
                     <img src="upload/detail_img1.jpg" alt="">
@@ -397,15 +413,34 @@
             </div>
             <!-- mod_copyright -->
             <div class="mod_copyright">
-                <p class="mod_copyright_links">关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 |
-                    English Site | Contact U</p>
-                <p class="mod_copyright_info">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱:
-                    zhanghj+itcast.cn <br>
-                    京ICP备08001421号京公网安备110108007702</p>
+                <p class="mod_copyright_links">关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 | English Site | Contact U</p>
+                <p class="mod_copyright_info">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br> 京ICP备08001421号京公网安备110108007702
+                </p>
             </div>
         </div>
     </div>
     <!-- footer end -->
+    <script>
+        var tab_list = document.querySelector('.detail_tab_list');
+        var lis = tab_list.querySelectorAll('li');
+        var items = document.querySelectorAll('.item_info');
+        console.log(tab_list);
+        for (var i = 0; i < lis.length; i++) {
+            //给每个li添加索引
+            lis[i].setAttribute('index', i);
+            lis[i].onclick = function() {
+                //干掉其他
+                for (var j = 0; j < lis.length; j++) {
+                    lis[j].className = '';
+                    items[j].style.display = 'none'
+                }
+                //留下自己
+                this.className = 'current';
+                var index = this.getAttribute('index');
+                items[index].style.display = 'block';
+            }
+        }
+    </script>
 </body>
 
 </html>
